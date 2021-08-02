@@ -2,11 +2,6 @@
 
 Abstract
 
-Tests of Latex rendering:
-
-$$\sum_i x^2$$
-
-And Here's an inline example $$\sum_i x^2$$.
 
 
 ## Literature Background and Motivation
@@ -64,10 +59,22 @@ p(N_i) \equiv \sum_{k=0}^{\infty}\left[\frac{N_{i}^{k}e^{-N_{i}}}{k!}\left(1-[1-
 $$
 
 Similarly to the individual's problem in Kremer 1996[^Kremer96], an individual of type $$i$$ gains some utility from social activity $$u_i(N_i)$$, and disutility equal to the chance that they become sick.
+So $$U_i(N_i)\equiv u_i(N_i) -p(N_i)$$.
 A person of type $$i$$ solves the problem:
 
 $$\max_{N_i\geq0} \left[u_i(N_i)-p(N_i)\right]$$
 
+
+For convenience of algebra, I want to choose a $$u_i$$ such that
+the total utility $$u_i(N_i)-p(N_i)$$ is continuous and concave down, 
+and such that the person's optimal choice of $$N_i$$ 
+as a function of $$\Psi$$ is continuous and bounded.
+
+The following function has these desired properties:
+
+$$u_i(N) = \ln(N/\theta_i) - c\frac{N}{\theta_i}$$
+
+where $$\theta_i$$ is the desired level of social connection for a person of type $$i$$ and 
 
 TODO: Conditions required of U
 
@@ -102,14 +109,14 @@ The parameter $$T$$ is the a priori chance that the contagion can transmit along
 
 If a person has $$k$$ neighbors, then the probability that this person has exactly $$m$$ "open" connections is $$\binom{k}{m} T^m (1-T)^k$$. The PGF for transmissible degree is thus
 
-$$G_0(x;T) \equiv \sum_{k=0}^\infty \left[\sum_{m=0}^k \left[\binom{k}{m} T^m (1-T)^k\right] x^k \right]
-=G_0\left(1-(1-x)T\right)
+$$G_0(x;T) \equiv \sum_{k=0}^\infty \left[\sum_{m=0}^k \left[\binom{k}{m} T^m (1-T)^k\right] x^k \right] \\
+=G_0\left(1-(1-x)T\right) \\
 = \sum_i \left[A_ie^{(x-1)TN_i}\right]$$
 
 Likewise, the PGF the excess transmissible degree of a random neighbor is 
 
 $$
-G_1(x;T)\equiv G_1(1-(1-x)T) 
+G_1(x;T)\equiv G_1(1-(1-x)T) \\
 = \frac{\sum_i \left[A_i N_i e^{(x-1)TN_i}\right]}{\sum_i  A_i N_i }
 $$
 
@@ -146,7 +153,7 @@ $$R_\infty = 1-\sum_i \left[A_ie^{-\Psi N_i}\right] = \sum_i \left[A_i[1-e^{-\Ps
 ### Equilibrium
 
 
-As in Kremer 1996 [^Kremer96], equilibrium will be defined by a behavioral condition and an epidemiological condition. 
+As in Kremer 1996 [^Kremer96], equilibrium is defined by a behavioral condition and an epidemiological condition. 
 The behavioral condition is that taking $$\Psi$$ as given, each individual chooses the level of social activity best for them. 
 The epidemiological condition is that these decisions lead to an outbreak that generates $$\Psi$$.
 
@@ -254,3 +261,4 @@ Likewise, the interventions I look at are from a static perspective. My model do
 ## Appendix Material?
 
 - Show that in more basic Poisson setup, duration of contagion doesn't matter.
+- Properties of utility function.
