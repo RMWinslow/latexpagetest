@@ -22,7 +22,7 @@ Each vertex in this graph is a person, and their edges represent social connecti
 Give the distribution of degrees of this social graph, along with a measure of how transmissive the contagion is, Newman is able to derive exact solutions for the size of an outbreak, the chance that an outbreak turns into a full-blown epidemic, and the portion of the population that ultimately becomes infected at some point during the epidemic.
 
 
-<div style="page-break-after">
+<div style="page-break-after">Woops.</div>
 
 
 Even though this approach views the spread of disease from a timeless static perspective, a later paper (Meyers, Ancel, Pourbohloul, Newman, Skowronski, Brunham. 2005.) [^Newman05] compares the solutions of this percolation-based model to simulations of the spread of SARS. Even in complex social graphs, the static solutions made more accurate predictions about the spread of this simulated disease than a basic SIR model, which can be thought of as implicitly assumes that the social graph is fully mixed, such that everyone has the same chance of spreading the disease to everyone else.
