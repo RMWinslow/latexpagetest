@@ -22,7 +22,7 @@ Each vertex in this graph is a person, and their edges represent social connecti
 Give the distribution of degrees of this social graph, along with a measure of how transmissive the contagion is, Newman is able to derive exact solutions for the size of an outbreak, the chance that an outbreak turns into a full-blown epidemic, and the portion of the population that ultimately becomes infected at some point during the epidemic.
 
 
-<div style="page-break-after: always;">Woops 2.</div>
+<div style="page-break-after: always;">This page break shows up in the right column.</div>
 
 
 Even though this approach views the spread of disease from a timeless static perspective, a later paper (Meyers, Ancel, Pourbohloul, Newman, Skowronski, Brunham. 2005.) [^Newman05] compares the solutions of this percolation-based model to simulations of the spread of SARS. Even in complex social graphs, the static solutions made more accurate predictions about the spread of this simulated disease than a basic SIR model, which can be thought of as implicitly assumes that the social graph is fully mixed, such that everyone has the same chance of spreading the disease to everyone else.
@@ -30,12 +30,16 @@ Even though this approach views the spread of disease from a timeless static per
 A benefit of this percolation-approach is that it highlights the role of heterogeneity among people who spread the disease. In this model, it's not just the basic reproductive number $$R_0$$ (that is, the average number of new infections that a sick person at the beginning of an outbreak will cause) that determines the epidemiological outcomes of a disease outbreak, but also the variation between individuals in how many additional infections they cause.
 
 
+
+<div style="page-break-after: always;">This page break shows up in the left column.</div>
+
 In "Superspreading and the effect of individual variation on disease emergence"[^Schreiber], (Lloyd-Smith, Schreiber, Kopp, Getz. 2005.),  the authors demonstrate how the high variance and skewed distribution of the individual reproductive number has important implications in prediction and control of an epidemic disease. 
 Higher variation makes disease outbreaks more likely to quickly die out, but also means that when they do spread, they spread a lot. 
 The authors show that the spread of SARS-CoV was highly dispersed, meaning that a small portion of infected individuals are responsible for a large portion of new infections.
 And research into the recent outbreak of SARS-CoV-2 suggests that this new contagion similar exhibits high dispersion in disease spread[^Endo20].
 
 
+<div hidden style="page-break-after: always;">This is invisible maybe.</div>
 
 
 
